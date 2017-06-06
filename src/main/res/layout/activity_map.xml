@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context="demo.googlemapsdemo.MapActivity">
+
+    <EditText
+        android:id="@+id/slat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="@string/hint_slat"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="157dp"
+        android:layout_marginTop="167dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/slon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="@string/hint_slon"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="107dp"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/slat"
+        android:layout_alignStart="@+id/slat"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="301dp"
+        android:onClick="showMap"
+        android:layout_marginBottom="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
